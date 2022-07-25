@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,15 @@ export class AppComponent {
   businessStatement = 'No Job is too big or too small, call us today!';
   telephone = '978-746-6012';
   email = 'andrew@askplumbingandheating.com';
+}
+
+export class Contact {
+  contactForm = new FormGroup({
+    fname: new FormControl(''),
+    lname: new FormControl(''),
+    email: new FormControl(''),
+    phone: new FormControl(''),
+    subject: new FormControl(''),
+    comments: new FormControl(''),
+  })
 }
