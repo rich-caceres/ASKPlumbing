@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -14,13 +13,3 @@ export class AppComponent {
   email = 'andrew@askplumbingandheating.com';
 }
 
-export class Contact {
-  contactForm = new FormGroup({
-    fname: new FormControl(''),
-    lname: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
-    subject: new FormControl(''),
-    comments: new FormControl(''),
-  })
-}

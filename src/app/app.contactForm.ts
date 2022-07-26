@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root-form',
@@ -8,14 +8,16 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 
 export class Contact {
-  contactForm = new FormGroup({
-    fname: new FormControl(''),
-    lname: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
-    subject: new FormControl(''),
-    comments: new FormControl(''),
+  contactForm = this.fb.group({
+    fname: ['', Validators.required],
+    lname: ['', Validators.required],
+    email: ['', Validators.required],
+    phone: ['', Validators.required],
+    subject: ['', Validators.required],
+    comments: ['', Validators.required],
   })
+
+  constructor(private fb: FormBuilder) { }
 
   onSubmit() {
     //TODO send information from above to the customer
