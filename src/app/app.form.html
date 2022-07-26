@@ -20,11 +20,11 @@
     </div>
     <div class="form-group mt-2">
       <label for="subject">Subject: </label>
-      <input class="form-control" id="subject" type="text" formControlName="subject" />
+      <input class="form-control" id="subject" type="text" placeholder="Reason for inquiry" formControlName="subject" />
     </div>
     <div class="form-group mt-2">
-      <label for="comments">Comments: </label>
-      <textarea class="form-control" id="comments" type="text-area" formControlName="comments" rows="3"></textarea>
+      <label for="comments">Detail Description: </label>
+      <textarea class="form-control" id="comments" type="text-area" formControlName="comments" placeholder="Additional details for the inquiry" rows="3"></textarea>
     </div>
     <button class="btn btn-primary mt-2" type="submit" [disabled]="!contactForm.valid">Submit</button>
   </form>
