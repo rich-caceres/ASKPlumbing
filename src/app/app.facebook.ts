@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class FacebookPLugin {
+export class FacebookPlugin {
 
-  script = '"https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0"';
+  
+  
+}
+
+window['fbAsyncInit'] = function () {
+  FB.init({
+    appId: 761665495114581,
+    cookie: true,
+    xfbml: true,
+    version: 'v14.0'
+  });
 }

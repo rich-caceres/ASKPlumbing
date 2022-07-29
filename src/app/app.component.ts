@@ -11,6 +11,5 @@ export class AppComponent {
   businessStatement = 'No Job is too big or too small, call us today!';
   telephone = '978-746-6012';
   email = 'andrew@askplumbingandheating.com';
-
 }
 

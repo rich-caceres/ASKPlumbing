@@ -3,17 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Contact } from './app.contactForm'
-import { FacebookPLugin } from './app.facebook'
+import { FacebookPlugin } from './app.facebook'
+import { FacebookModule } from 'ngx-facebook'
 
 @NgModule({
   declarations: [
     AppComponent,
     Contact,
-    FacebookPLugin
+    FacebookPlugin
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FacebookModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent, Contact]
