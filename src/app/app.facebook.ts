@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { APP_ID, Component } from '@angular/core';
+import { FacebookService, InitParams } from 'ngx-facebook';
 
 @Component({
   selector: 'app-fb-profile',
@@ -8,15 +9,16 @@ import { Component } from '@angular/core';
 
 export class FacebookPlugin {
 
-  
+  constructor(private fb: FacebookService) {
+
+    let initParams: InitParams = {
+
+      appId: '761665495114581',
+      xfbml: true,
+      version: 'v14.0'
+    }
+}
   
 }
 
-window['fbAsyncInit'] = function () {
-  FB.init({
-    appId: 761665495114581,
-    cookie: true,
-    xfbml: true,
-    version: 'v14.0'
-  });
-}
+
