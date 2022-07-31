@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FacebookService, InitParams, FBPageComponent } from 'ngx-facebook';
+import { FacebookService, InitParams} from 'ngx-facebook';
 
 @Component({
   selector: 'app-root',
@@ -14,5 +14,17 @@ export class AppComponent {
   businessStatement = 'No Job is too big or too small, call us today!';
   telephone = '978-746-6012';
   email = 'andrew@askplumbingandheating.com';
+
+  constructor(private fb: FacebookService) {
+
+    const initParams: InitParams = {
+
+      appId: '761665495114581',
+      xfbml: true,
+      version: 'v14.0',
+      autoLogAppEvents: true,
+    }
+    fb.init(initParams);
+  }
 }
 
