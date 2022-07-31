@@ -10,9 +10,20 @@ export class AppComponent {
 
 
   title = 'A.S.K. Plumbing & Heating';
-  services = ['Drainage Services', 'Leaky Pipes Repair', 'Water Heater Repair', 'Sewer Stoppage Cleaning', 'Yearly Plumbing Inspection', 'Plumbing Diagnostics'];
+  services = ['Toilet installations and Repairs', 
+              'Sink Installations and Repairs', 
+              'Water heater repairs and installation',
+              'Gas Piping installing',
+              'Plumbing maintenance and repair', 
+              'Boilers installations and service', 
+              'Sump Pumps',
+              'Water filtration installations'];
   businessStatement = 'Serving the North Shore area, ASK plumbing and heating is committed to providing exceptional service and superior customer care. You can trust ASK plumbing and heating to handle all of your service needs and do so with a smile. Here at ASK plumbing and heating we strive to make sure that the customer is satisfied, no job is too small!';
-  shortStatements = ['A licensed and insured, local technician with the expertise for your specific needs.', 'Quality service and better customer care.', 'Attention to detail is the name of the game.', 'Prompt service with professional delivery.', 'Quality work from quality plumbers.'];
+  shortStatements = ['A licensed and insured, local technician with the expertise for your specific needs.',
+                     'Quality service and better customer care.',
+                     'Attention to detail is the name of the game.',
+                     'Prompt service with professional delivery.',
+                     'Quality work from quality plumbers.'];
   telephone = '978-746-6012';
   email = 'andrew@askplumbingandheating.com';
 
