@@ -11,7 +11,6 @@ import { ContacterService } from './contacter.service';
 
 
 export class Contact {
- 
 
   contactForm = this.fb.group({
     fname: ['', Validators.required],
