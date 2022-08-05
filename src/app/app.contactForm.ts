@@ -20,7 +20,7 @@ export class Contact {
 
   constructor(private fb: FormBuilder, private contactService: ContacterService) { }
 
-  NetworkonSubmit(contactForm: any){
+  onSubmit(contactForm: any){
     this.contactService.postMessage(contactForm).subscribe(response => { console.log(response) }, error => (console.log({ error })))
   }
 }
