@@ -1,7 +1,7 @@
 
 
   <h2>Contact Now</h2>
-  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
     <div class="form-group">
       <label for="fname">First Name: </label>
       <input class="form-control" id="fname" type="text" placeholder="First Name" formControlName="fname" />

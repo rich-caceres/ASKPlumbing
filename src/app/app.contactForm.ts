@@ -13,7 +13,7 @@ import { ContacterService } from './contacter.service';
 export class Contact {
 
   contactForm = this.fb.group({
-    fname: ['', Validators.required],
+    name: ['', Validators.required],
     email: ['', Validators.required],
     phone: ['', Validators.required],
     subject: ['', Validators.required],
