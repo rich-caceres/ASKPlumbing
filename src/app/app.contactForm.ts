@@ -8,13 +8,11 @@ import { ContacterService } from './contacter.service';
   styleUrls: ['./app.component.css']
 })
 
-
-
 export class Contact {
 
   contactForm = this.fb.group({
     name: ['', Validators.required],
-    email: ['', Validators.required],
+    email: ['', Validators.email],
     phone: ['', Validators.required],
     subject: ['', Validators.required],
     comments: ['', Validators.required],
@@ -22,7 +20,7 @@ export class Contact {
 
   constructor(private fb: FormBuilder, private contactService: ContacterService) { }
 
-  onSubmit(contactForm: FormBuilder) {
+  NetworkonSubmit(contactForm: any){
     this.contactService.postMessage(contactForm).subscribe(response => { console.log(response) }, error => (console.log({ error })))
   }
 }
