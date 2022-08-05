@@ -15,7 +15,6 @@ export class Contact {
 
   contactForm = this.fb.group({
     fname: ['', Validators.required],
-    lname: ['', Validators.required],
     email: ['', Validators.required],
     phone: ['', Validators.required],
     subject: ['', Validators.required],
@@ -24,7 +23,7 @@ export class Contact {
 
   constructor(private fb: FormBuilder, private contactService: ContacterService) { }
 
-  onSubmit() {
-    //TODO send information from above to the customer
+  onSubmit(contactForm: FormBuilder) {
+    
   }
 }
