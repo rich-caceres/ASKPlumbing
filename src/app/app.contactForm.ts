@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root-form',
@@ -7,7 +7,11 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 
+
+
 export class Contact {
+ 
+
   contactForm = this.fb.group({
     fname: ['', Validators.required],
     lname: ['', Validators.required],
