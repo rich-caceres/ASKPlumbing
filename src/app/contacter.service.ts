@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Input } from '@angular/core';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,17 +10,17 @@ export class ContacterService {
 
   constructor(private http: HttpClient) { }
 
-  postMessage(Input: any) {
-    return this.http.post(this.api, input, { responseType: 'text'}).pipe(
+  postMessage(input: any) {
+    return this.http.post(this.api, input).pipe(
       map(
-        (response) => {
+        (response: any) => {
           if (response) {
             return response;
-        },
-        (error: any) => {
-          return error;
-        }
-      )
+          }
+          (error: any) => {
+            return error;
+          }
+        })
     )
   }
 }
