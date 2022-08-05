@@ -6,7 +6,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ContacterService {
-  private api = 'http://localhost:3000';
+  private api = 'http://localhost:3000/sendemail';
 
   constructor(private http: HttpClient) { }
 
