@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
+import { ContacterService } from './contacter.service';
 
 @Component({
   selector: 'app-root-form',
@@ -21,7 +22,7 @@ export class Contact {
     comments: ['', Validators.required],
   })
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private contactService: ContacterService) { }
 
   onSubmit() {
     //TODO send information from above to the customer

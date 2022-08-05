@@ -5,12 +5,21 @@ import { Injectable, Input } from '@angular/core';
   providedIn: 'root'
 })
 export class ContacterService {
-  private api = 'https://mailthis.to/you@mail.com';
+  private api = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) { }
 
-    postMessage(Input: any){
-
-    }
+  postMessage(Input: any) {
+    return this.http.post(this.api, input, { responseType: 'text'}).pipe(
+      map(
+        (response) => {
+          if (response) {
+            return response;
+        },
+        (error: any) => {
+          return error;
+        }
+      )
+    )
   }
 }
