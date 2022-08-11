@@ -23,5 +23,6 @@ export class Contact {
 
   onSubmit(contactForm: any){
     this.contactService.postMessage(contactForm).subscribe(response => { console.log(response) }, error => (console.log({ error })))
+    this.contactForm.reset();
   }
 }
