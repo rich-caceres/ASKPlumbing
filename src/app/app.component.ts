@@ -38,5 +38,8 @@ export class AppComponent {
     }
     fb.init(initParams);
   }
+
+
+
 }
 
