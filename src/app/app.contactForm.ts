@@ -22,7 +22,7 @@ export class Contact {
   constructor(private fb: FormBuilder, private contactService: ContacterService) { }
 
   onSubmit(contactForm: any){
-    this.contactService.postMessage(contactForm).subscribe(response => { console.log(response) }, error => (console.log({ error })))
-    this.contactForm.reset();
+    this.contactService.postMessage(contactForm).subscribe(response => { this.contactForm.reset(); alert("Your message has been sent!"); console.log(response) }, error => (alert("Uh oh, something went wrong on our end. Call or email us!"), console.log({ error })))
+   
   }
 }
