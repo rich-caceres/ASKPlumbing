@@ -8,7 +8,7 @@ import { FacebookService, InitParams} from 'ngx-facebook';
 })
 export class AppComponent {
 
-  isCollapsed = false;
+  isCollapsed = true;
   title = 'A.S.K. Plumbing & Heating';
   services = ['Toilet installations and Repairs', 
               'Sink Installations and Repairs', 

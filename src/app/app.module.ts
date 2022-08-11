@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { Contact } from './app.contactForm'
-import { FacebookModule } from 'ngx-facebook'
-import { HttpClientModule } from '@angular/common/http'
+import { Contact } from './app.contactForm';
+import { FacebookModule } from 'ngx-facebook';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { HttpClientModule } from '@angular/common/http';
 import { ContacterService } from './contacter.service';
 
 @NgModule({
@@ -14,7 +15,7 @@ import { ContacterService } from './contacter.service';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule, NgbModule,
     FacebookModule.forRoot(),
     HttpClientModule
   ],

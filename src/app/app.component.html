@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">Contact us now!</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">Contact us now!</button>
   <div class="collapse" id="collapseContent" [ngbCollapse]="isCollapsed">
   <div class="row">
     <div class="text-center">
