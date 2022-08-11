@@ -39,7 +39,8 @@ export class AppComponent {
     fb.init(initParams);
   }
 
-
+  returnStatement(shortStatements: Array<string>) {
+    return shortStatements[Math.floor(Math.random() * shortStatements.length)];
+  }
 
 }
-

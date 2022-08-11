@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ContacterService } from './contacter.service';
+import { AppComponent } from './app.component'
 
 @Component({
   selector: 'app-root-form',
