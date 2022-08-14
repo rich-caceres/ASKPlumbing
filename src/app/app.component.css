@@ -20,10 +20,30 @@
   .robotoFont h4 {
     font-size: 30px;
   }
-
-  .robotoFont p,li{
-      font-size:18px;
+@media (max-width: 659px) {
+  .robotoFont p, li {
+    font-size: 4vw;
   }
+}
+  @media (min-width: 700px){
+    .robotoFont p, li {
+        font-size:2vw;
+    }
+
+  }
+
+@media (min-width: 1000px) {
+  .robotoFont p, li {
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .robotoFont p, li {
+    font-size: 1vw;
+  }
+}
+
 
 h1,
 h2,
@@ -48,6 +68,7 @@ p {
   left: 0;
   right: 0;
   height: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   background-image: url('../assets/AmericanFlag.png');
