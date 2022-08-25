@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Inject, Injectable } from '@angular/core'
 import { FacebookService, InitParams} from 'ngx-facebook';
 
 @Component({
@@ -6,7 +7,23 @@ import { FacebookService, InitParams} from 'ngx-facebook';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
+
+  constructor(private fb: FacebookService) {
+
+    const initParams: InitParams = {
+
+      appId: '761665495114581',
+      xfbml: false,
+      version: 'v14.0',
+      autoLogAppEvents: true,
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      fb.init(initParams);
+    })
+  }
 
   isCollapsed = true;
   title = 'A.S.K. Plumbing & Heating';
@@ -27,17 +44,7 @@ export class AppComponent {
   telephone = '978-746-6012';
   email = 'andrew@askplumbingandheating.com';
 
-  constructor(private fb: FacebookService) {
-
-    const initParams: InitParams = {
-
-      appId: '761665495114581',
-      xfbml: true,
-      version: 'v14.0',
-      autoLogAppEvents: true,
-    }
-    fb.init(initParams);
-  }
+ 
 
   returnStatement(shortStatements: Array<string>) {
     return shortStatements[Math.floor(Math.random() * shortStatements.length)];
