@@ -22,7 +22,9 @@
       <p>ASK Plumbing & Services are not limited to the list below, but we like to list some of the most common services requested by customers.</p>
       <ul class="pt-2"><li *ngFor="let service of services">{{service}}</li></ul>
     </div>
-
+    <div class="col">
+      <fb-page href="https://www.facebook.com/profile.php?id=100076041669937" tabs="timeline, messages" Height="600"></fb-page>
+    </div>
   </div>
   <div class="row p-2">
     <button class="btn btn-primary" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed" data-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">Contact us now!</button>
@@ -31,8 +33,6 @@
 
     <app-root-form></app-root-form>
   </div>
-
-  <fb-page href="https://www.facebook.com/profile.php?id=100076041669937" tabs="timeline, messages" Height="600"></fb-page>
 
   <!-- Resources -->
   <h2>Resources</h2>
