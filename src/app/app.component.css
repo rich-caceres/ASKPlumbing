@@ -20,6 +20,7 @@
   .robotoFont h4 {
     font-size: 30px;
   }
+
 @media (max-width: 659px) {
   .robotoFont p, li {
     font-size: 4vw;
@@ -41,42 +42,8 @@
     font-size: 1vw;
   }
 }
-.img-center {
-  display: block;
-  margin-left: 49%;
-}
 
-@media (max-width: 900px){
-  .img-center {
-    margin-left: 45%;
-  }
-}
 
-@media (max-width: 715px) {
-  .img-center {
-    margin-left: 45%;
-  }
-}
-
-@media (max-width: 600px) {
-  .img-center {
-    margin-left: 45%;
-  }
-}
-@media (max-width: 500px){
-  .img-center {
-    margin-left: 42%;
-  }
-  .hider{
-      visibility:hidden;
-  }
-}
-
-@media (max-width: 300px) {
-  .img-center {
-    margin-left: 0%;
-  }
-}
 
 h1,
 h2,
@@ -104,9 +71,9 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('../assets/AmericanFlag.png');
+  /*background-image: url('../assets/AmericanFlag.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   color: white;
   font-weight: 600;
 }
@@ -302,5 +269,24 @@ svg#clouds {
   svg#rocket-smoke {
     right: 120px;
     transform: rotate(-5deg);
+  }
+}
+
+.shower {
+  display: none;
+}
+
+@media (max-width: 535px) {
+  .img-center {
+    margin-left: 10%;
+  }
+
+  .hider {
+    flex-shrink: 3;
+    visibility: hidden;
+  }
+
+  .shower {
+    display: revert;
   }
 }
