@@ -43,7 +43,7 @@
 }
 .img-center {
   display: block;
-  margin-left: 47%;
+  margin-left: 49%;
 }
 
 @media (max-width: 900px){
@@ -60,12 +60,12 @@
 
 @media (max-width: 600px) {
   .img-center {
-    margin-left: 39%;
+    margin-left: 45%;
   }
 }
 @media (max-width: 500px){
   .img-center {
-    margin-left: 35%;
+    margin-left: 42%;
   }
 }
 
