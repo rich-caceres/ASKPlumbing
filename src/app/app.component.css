@@ -67,6 +67,9 @@
   .img-center {
     margin-left: 42%;
   }
+  .hider{
+      visibility:hidden;
+  }
 }
 
 @media (max-width: 300px) {
