@@ -26,7 +26,8 @@ export class AppComponent {
   }
 
   isCollapsed = true;
-  title = 'A.S.K. Plumbing & Heating';
+  title = 'A.S.K.';
+  title2 = 'Plumbing & Heating';
   services = ['Toilet installations and Repairs', 
               'Sink Installations and Repairs', 
               'Water heater repairs and installation',
